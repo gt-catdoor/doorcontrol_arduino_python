@@ -80,7 +80,7 @@ def moveServo(index, degree):
     if (degree <= 180) and (degree >= 0):
         servovals[index] = degree
         ardun.servoWrite(servolist[index], servovals[index])
-        print("Moved servo " + str(index) + " to " + str(servovals[index]) + " degrees.")
+        print("Moved servo " + str(index+1) + " to " + str(servovals[index]) + " degrees.")
 
 def initialize():
     global servolist
